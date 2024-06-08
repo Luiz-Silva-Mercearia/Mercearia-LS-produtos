@@ -1,0 +1,55 @@
+footer{
+    max-height: 600px;
+    background-color: var(--azulClaro);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.divFrase{
+    max-width: 400px;
+    margin: 20px 0px;
+}
+
+.linksRapidos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.linksRapidos a:hover{
+    transition: 0.3s;
+    color: var(--azul);
+}
+
+.divEncontre{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.divEncontre a{
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.divAssinatura{
+    background-color: var(--escuro);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.divAssinatura a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.divAssinatura a:hover{
+    transition: 0.5s;
+    color: var(--azulClaro);
+}

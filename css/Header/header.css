@@ -1,0 +1,25 @@
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: var(--azul);
+    padding: 20px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 55px;
+}
+
+.nav-list > a{
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+}
+
+.nav-list > a:hover{
+    transition: 0.5s;
+    color: var(--escuro);
+}

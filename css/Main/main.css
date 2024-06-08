@@ -1,0 +1,134 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.859);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.titulos{
+    border-bottom: 1px solid var(--azul);
+    font-weight: 300;
+}
+
+
+/*INICIO*/
+
+#inicio > img {
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+}
+
+
+.textoInicio{
+    min-width: 300px;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.textoInicio > p{
+    padding-top: 20px;
+}
+
+
+/*PRODUTOS*/
+
+#produtos{
+    flex-direction: column;
+}
+
+#produtos > h2{
+    align-self: flex-start;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: var(--azul);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+  /*DUVIDAS*/
+
+.duvida h3{
+    border: 2px solid var(--azul);
+    border-radius: 8px;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.duvida img{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.duvida > .paragrafo{
+    border-right: 2px solid var(--azul);
+    border-bottom: 2px solid var(--azul);
+    border-left: 2px solid var(--azul);
+    border-radius: 0 0 8px 8px;
+    padding: 0px;
+    margin-top: -8px;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.duvida.ativa > .paragrafo{
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+.duvida{
+    position: relative;
+    cursor: pointer;
+}
